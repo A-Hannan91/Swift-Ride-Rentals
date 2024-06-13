@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swift Ride Rentals</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/Swift Ride Logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div class="overlay" data-overlay></div>
+
+        <a href="#" class="logo">
+          <img
+            src="./images/Swift Ride Logo.png"
+            height="70"
+            width="90"
+            alt="DriveSmart logo"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="../indec.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li>
+              <a href="#featured-car" class="navbar-link" data-nav-link
+                >Explore cars</a
+              >
+            </li>
+
+            <li>
+              <a href="./about.html" class="navbar-link" data-nav-link>About us</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>Contact us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <div class="header-contact">
+            <a href="tel:88002345678" class="contact-link">8 800 274 56 78</a>
+
+            <span class="contact-time">Mon - Sat: 9:00 am - 6:00 pm</span>
+          </div>
+
+          <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+            <ion-icon name="car-outline"></ion-icon>
+
+            <span id="aria-label-txt">Explore cars</span>
+          </a>
+
+          <a href="#" class="btn user-btn" aria-label="Profile">
+            <ion-icon name="person-outline"></ion-icon>
+          </a>
+
+          <button
+            class="nav-toggle-btn"
+            data-nav-toggle-btn
+            aria-label="Toggle Menu"
+          >
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+
+<section class="contact">
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+
+        <section class="form-container">
+            <h2>Get in Touch</h2>
+            <form action="#" method="POST">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                <select id="car-model" name="car-model" required>
+                    <option value="">Select Car Model</option>
+                    <option value="Suzuki Alto">Suzuki Alto</option>
+                    <option value="Changan Alsvin">Changan Alsvin</option>
+                    <option value="Corola Altis 1.6 2021">Corola Altis 1.6 2021</option>
+                    <option value="Toyota Corola Grande 2.0">Toyota Corola Grande 2.0</option> 
+                    <option value="Toyota Hilux Revo">Toyota Hilux Revo</option> 
+                    <option value="Toyota Land Cruiser">Toyota Land Cruiser</option>
+
+                </select>
+                <label for="rental-dates">Rental Dates</label>
+                <input type="date" id="rental-start" name="rental-start" required>
+                <input type="date" id="rental-end" name="rental-end" required>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="map">
+            <h2>Our Office Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.091527419322!2d-122.40641728468174!3d37.78583417975764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f6c04a2f%3A0x7c0e0d3bcd5b9f4d!2sGoogleplex!5e0!3m2!1sen!2sus!4v1620601228051!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="customer-service">
+            <h2>Customer Service</h2>
+            <p><strong>Phone:</strong> 8 800 274 56 78</p>
+            <p><strong>Email:</strong> support@swiftriderentals.com</p>
+            <p><strong>Hours:</strong> Monday - Saturday: 9am - 6pm</p>
+            <p>Sunday: Closed</p>
+        </section>
+    </div>
+</section>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img
+                src="./images/Swift Ride Logo.png"
+                height="100"
+                width="90"
+                alt="DriveSmart logo"
+              />
+            </a>
+
+            <p class="footer-text">
+              Search for cheap rental cars in Pakistan. With a diverse fleet of
+              6,000 vehicles, Waydex offers its consumers an attractive and fun
+              selection.
+            </p>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Company</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Pricing plans</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Our blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Support</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Help center</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Ask a question</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & conditions</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Head Offices in Pakistan</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Karachi</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Hayderbad</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Quetta</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Lahore</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Multan</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Islamabad</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Pishawar</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Gilgit</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-skype"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            &copy; 2024 <a href="#">Swift Ride by AHN</a>. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
